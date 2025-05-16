@@ -1,0 +1,9 @@
+- name: Dates Playbook
+  hosts: ec2
+  tasks: 
+    - name: Get current date
+      command: date
+
+    # - name: Get current time
+    #   debug:
+    #     msg: "Current time is {{ ansible_date_time.time }}"
